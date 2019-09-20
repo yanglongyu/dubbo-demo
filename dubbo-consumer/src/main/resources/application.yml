@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+dubbo:
+  application:
+    name: dubbo-commsumer
+# dubbo服务所在包路径
+  scan:
+    base-packages: com.lontyu.dubbo.comsumer.controller
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    port: 20008
